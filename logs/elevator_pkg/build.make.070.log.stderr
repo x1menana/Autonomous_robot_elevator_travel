@@ -1,0 +1,6 @@
+[01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/ElevatorCoordinator.cpp:27:80:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+     ROS_INFO_STREAM('_currentFloor: ' << _currentFloor << " _floor: " << _floor[01;35m[K)[m[K;
+                                                                                [01;35m[K^[m[K
+[01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/ElevatorCoordinator.cpp:29:63:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+         ROS_INFO_STREAM('((_currentFloor == _floor) && _door)'[01;35m[K)[m[K;
+                                                               [01;35m[K^[m[K

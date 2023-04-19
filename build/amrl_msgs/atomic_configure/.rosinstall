@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /root/projects/elevator_ws/devel/.private/amrl_msgs/setup.sh

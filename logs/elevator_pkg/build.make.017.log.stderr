@@ -1,0 +1,12 @@
+[01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/ElevatorCoordinator.cpp:1:46:[m[K [01;35m[Kwarning: [m[Kextra tokens at end of #include directive
+ #include <elevator_pkg/ElevatorCoordinator.h>[01;35m[K>[m[K
+                                              [01;35m[K^[m[K
+In file included from [01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/ElevatorCoordinator.cpp:1:0[m[K:
+[01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/include/elevator_pkg/ElevatorCoordinator.h:4:10:[m[K [01;31m[Kfatal error: [m[Kamrl_msgs/ElevatorStatus.h: No such file or directory
+ #include [01;31m[K<amrl_msgs/ElevatorStatus.h>[m[K
+          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/elevator_coordinator.dir/src/ElevatorCoordinator.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/elevator_coordinator.dir/all] Error 2
+make: *** [all] Error 2

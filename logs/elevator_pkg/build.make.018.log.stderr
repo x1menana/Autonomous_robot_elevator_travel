@@ -1,0 +1,9 @@
+[01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/ElevatorCoordinator.cpp:1:46:[m[K [01;35m[Kwarning: [m[Kextra tokens at end of #include directive
+ #include <elevator_pkg/ElevatorCoordinator.h>[01;35m[K>[m[K
+                                              [01;35m[K^[m[K
+/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make[2]: *** [/root/projects/elevator_ws/devel/.private/elevator_pkg/lib/elevator_pkg/elevator_coordinator] Error 1
+make[1]: *** [CMakeFiles/elevator_coordinator.dir/all] Error 2
+make: *** [all] Error 2

@@ -1,0 +1,10 @@
+[35m[1mScanning dependencies of target elevator_coordinator[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/elevator_coordinator.dir/src/ElevatorCoordinator.cpp.o[0m
+[01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/ElevatorCoordinator.cpp:23:77:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+     ROS_INFO_STREAM('_currentFloor: ' << msg->floor << " _floor: " << _floor[01;35m[K)[m[K;
+                                                                             [01;35m[K^[m[K
+[01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/ElevatorCoordinator.cpp:25:63:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+         ROS_INFO_STREAM('((_currentFloor == _floor) && _door)'[01;35m[K)[m[K;
+                                                               [01;35m[K^[m[K
+[ 66%] [32m[1mLinking CXX executable /root/projects/elevator_ws/devel/.private/elevator_pkg/lib/elevator_pkg/elevator_coordinator[0m
+[100%] Built target elevator_coordinator

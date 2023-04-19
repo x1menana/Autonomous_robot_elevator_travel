@@ -1,0 +1,6 @@
+devel_space: /root/projects/elevator_ws/devel
+install: false
+install_space: /root/projects/elevator_ws/install
+profile: default
+source_space: /root/projects/elevator_ws/src
+workspace: /root/projects/elevator_ws

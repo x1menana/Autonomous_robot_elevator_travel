@@ -1,0 +1,10 @@
+[01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/ElevatorCoordinator.cpp:[m[K In member function '[01m[Kvoid ElevatorCoordinator::callElevator(int, int)[m[K':
+[01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/ElevatorCoordinator.cpp:24:53:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before numeric constant
+     _elevatorPub.publish(amrl_msgs::ElevatorCommand [01;31m[K1[m[K, amrl_msgs::ElevatorCommand true);
+                                                     [01;31m[K^[m[K
+[01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/ElevatorCoordinator.cpp:24:83:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before '[01m[Ktrue[m[K'
+     _elevatorPub.publish(amrl_msgs::ElevatorCommand 1, amrl_msgs::ElevatorCommand [01;31m[Ktrue[m[K);
+                                                                                   [01;31m[K^~~~[m[K
+make[2]: *** [CMakeFiles/elevator_coordinator.dir/src/ElevatorCoordinator.cpp.o] Error 1
+make[1]: *** [CMakeFiles/elevator_coordinator.dir/all] Error 2
+make: *** [all] Error 2

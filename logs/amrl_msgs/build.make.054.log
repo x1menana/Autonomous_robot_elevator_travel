@@ -1,0 +1,29 @@
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target _amrl_msgs_generate_messages_check_deps_BBox2DMsg
+[  0%] Built target _amrl_msgs_generate_messages_check_deps_ErrorReport
+[  0%] Built target _amrl_msgs_generate_messages_check_deps_Pose2Df
+[  0%] Built target _amrl_msgs_generate_messages_check_deps_RobofleetStatus
+[  0%] Built target _amrl_msgs_generate_messages_check_deps_Point2D
+[  0%] Built target _amrl_msgs_generate_messages_check_deps_PlanarObjDetection
+[  0%] Built target _amrl_msgs_generate_messages_check_deps_ColoredText
+[  0%] Built target _amrl_msgs_generate_messages_check_deps_BBox2DArrayMsg
+[  0%] Built target _amrl_msgs_generate_messages_check_deps_PathVisualization
+[  0%] Built target _amrl_msgs_generate_messages_check_deps_RobofleetSubscription
+[  0%] Built target _amrl_msgs_generate_messages_check_deps_ElevatorCommand
+[  0%] Built target _amrl_msgs_generate_messages_check_deps_ColoredArc2D
+[  0%] Built target _amrl_msgs_generate_messages_check_deps_ColoredPoint2D
+[  0%] Built target _amrl_msgs_generate_messages_check_deps_Localization2DMsg
+[  0%] Built target _amrl_msgs_generate_messages_check_deps_AckermannCurvatureDriveMsg
+[  0%] Built target _amrl_msgs_generate_messages_check_deps_VisualizationMsg
+[  0%] Built target _amrl_msgs_generate_messages_check_deps_ElevatorStatus
+[  0%] Built target _amrl_msgs_generate_messages_check_deps_ColoredLine2D
+[ 28%] Built target amrl_msgs_generate_messages_nodejs
+[ 60%] Built target amrl_msgs_generate_messages_cpp
+[ 60%] Built target amrl_msgs_generate_messages_lisp
+[ 82%] Built target amrl_msgs_generate_messages_eus
+[100%] Built target amrl_msgs_generate_messages_py
+[100%] Built target amrl_msgs_generate_messages

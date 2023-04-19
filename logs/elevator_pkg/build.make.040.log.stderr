@@ -1,0 +1,28 @@
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:40:0[m[K,
+                 from [01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/include/elevator_pkg/ElevatorCoordinator.h:7[m[K,
+                 from [01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/ElevatorCoordinator.cpp:1[m[K:
+[01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/ElevatorCoordinator.cpp:[m[K In member function '[01m[Kvoid ElevatorCoordinator::callElevator(int, int)[m[K':
+[01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/ElevatorCoordinator.cpp:34:85:[m[K [01;31m[Kerror: [m[K'[01m[Kamrl_msgs::ElevatorCommand {aka struct amrl_msgs::ElevatorCommand_<std::allocator<void> >}[m[K' has no member named '[01m[Khold_doors[m[K'; did you mean '[01m[Khold_door[m[K'?
+     ROS_INFO_STREAM("amrl_msgs::Command: " << command.floor_cmd << "   " << command.[01;31m[Kh[m[Kold_doors)
+                                                                                     [01;31m[K^[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:358:64:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KROSCONSOLE_PRINT_STREAM_AT_LOCATION_WITH_FILTER[m[K'
+     __rosconsole_print_stream_at_location_with_filter__ss__ << [01;36m[Kargs[m[K; \
+                                                                [01;36m[K^~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:406:7:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KROSCONSOLE_PRINT_STREAM_AT_LOCATION[m[K'
+       [01;36m[KROSCONSOLE_PRINT_STREAM_AT_LOCATION[m[K(args); \
+       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:579:43:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KROS_LOG_STREAM_COND[m[K'
+ #define ROS_LOG_STREAM(level, name, args) [01;36m[KROS_LOG_STREAM_COND[m[K(true, level, name, args)
+                                           [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/rosconsole/macros_generated.h:111:31:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KROS_LOG_STREAM[m[K'
+ #define ROS_INFO_STREAM(args) [01;36m[KROS_LOG_STREAM[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, args)
+                               [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/ElevatorCoordinator.cpp:34:5:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KROS_INFO_STREAM[m[K'
+     [01;36m[KROS_INFO_STREAM[m[K("amrl_msgs::Command: " << command.floor_cmd << "   " << command.hold_doors)
+     [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/ElevatorCoordinator.cpp:38:5:[m[K [01;31m[Kerror: [m[Kexpected '[01m[K;[m[K' before '[01m[Kstd[m[K'
+     [01;31m[Kstd[m[K::cout << "hello" << std::endl;
+     [01;31m[K^~~[m[K
+make[2]: *** [CMakeFiles/elevator_coordinator.dir/src/ElevatorCoordinator.cpp.o] Error 1
+make[1]: *** [CMakeFiles/elevator_coordinator.dir/all] Error 2
+make: *** [all] Error 2

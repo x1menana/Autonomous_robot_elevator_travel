@@ -1,0 +1,16 @@
+[01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/ElevatorCoordinator.cpp:24:77:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+     ROS_INFO_STREAM('_currentFloor: ' << msg->floor << " _floor: " << _floor[01;35m[K)[m[K;
+                                                                             [01;35m[K^[m[K
+[01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/ElevatorCoordinator.cpp:26:63:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+         ROS_INFO_STREAM('((_currentFloor == _floor) && _door)'[01;35m[K)[m[K;
+                                                               [01;35m[K^[m[K
+[01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/ElevatorCoordinator.cpp:[m[K In member function '[01m[Kvoid ElevatorCoordinator::callback(const ConstPtr&)[m[K':
+[01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/ElevatorCoordinator.cpp:14:1:[m[K [01;31m[Kerror: [m[K'[01m[Kd[m[K' was not declared in this scope
+ [01;31m[Kd[m[K
+ [01;31m[K^[m[K
+[01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/ElevatorCoordinator.cpp:25:9:[m[K [01;31m[Kerror: [m[K'[01m[K_currentFloor[m[K' was not declared in this scope
+    if (([01;31m[K_currentFloor[m[K == _floor) && _door) {
+         [01;31m[K^~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/elevator_coordinator.dir/src/ElevatorCoordinator.cpp.o] Error 1
+make[1]: *** [CMakeFiles/elevator_coordinator.dir/all] Error 2
+make: *** [all] Error 2

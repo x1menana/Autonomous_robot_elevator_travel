@@ -1,0 +1,15 @@
+[31m[1mCMake Error[0m at /root/projects/elevator_ws/build/amrl_msgs/cmake/elevator_pkg-genmsg.cmake:3 (message):
+  Could not find messages which
+  '/root/projects/elevator_ws/src/elevator_project/amrl_msgs/msg/HumanStateMsg.msg'
+  depends on.  Did you forget to specify generate_messages(DEPENDENCIES ...)?
+
+  Cannot locate message [Pose2D]: unknown package [geometry_msgs] on search
+  path [{{'elevator_pkg':
+  ['/root/projects/elevator_ws/src/elevator_project/amrl_msgs/msg'],
+  'std_msgs': ['/opt/ros/melodic/share/std_msgs/cmake/../msg']}}]
+[36mCall Stack (most recent call first):[0m
+  /opt/ros/melodic/share/genmsg/cmake/genmsg-extras.cmake:307 (include)
+  CMakeLists.txt:90 (generate_messages)
+
+
+make: *** [cmake_check_build_system] Error 1

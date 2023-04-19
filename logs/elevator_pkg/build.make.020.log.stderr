@@ -1,0 +1,14 @@
+[01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/ElevatorCoordinator.cpp:1:46:[m[K [01;35m[Kwarning: [m[Kextra tokens at end of #include directive
+ #include <elevator_pkg/ElevatorCoordinator.h>[01;35m[K>[m[K
+                                              [01;35m[K^[m[K
+[01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/ElevatorCoordinator.cpp:[m[K In constructor '[01m[KElevatorCoordinator::ElevatorCoordinator(ros::NodeHandle&)[m[K':
+[01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/ElevatorCoordinator.cpp:4:58:[m[K [01;31m[Kerror: [m[K'[01m[KposeCallback[m[K' was not declared in this scope
+     _elevatorSub = n.subscribe("/elevator/status", 1000, [01;31m[KposeCallback[m[K, this);
+                                                          [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/ElevatorCoordinator.cpp:4:58:[m[K [01;36m[Knote: [m[Ksuggested alternative: '[01m[Kcallback[m[K'
+     _elevatorSub = n.subscribe("/elevator/status", 1000, [01;36m[KposeCallback[m[K, this);
+                                                          [01;36m[K^~~~~~~~~~~~[m[K
+                                                          [32m[Kcallback[m[K
+make[2]: *** [CMakeFiles/elevator_coordinator.dir/src/ElevatorCoordinator.cpp.o] Error 1
+make[1]: *** [CMakeFiles/elevator_coordinator.dir/all] Error 2
+make: *** [all] Error 2

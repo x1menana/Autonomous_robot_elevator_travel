@@ -1,0 +1,14 @@
+[01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/ElevatorCoordinator.cpp:1:46:[m[K [01;35m[Kwarning: [m[Kextra tokens at end of #include directive
+ #include <elevator_pkg/ElevatorCoordinator.h>[01;35m[K>[m[K
+                                              [01;35m[K^[m[K
+[01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/ElevatorCoordinator.cpp:[m[K In constructor '[01m[KElevatorCoordinator::ElevatorCoordinator(ros::NodeHandle&)[m[K':
+[01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/ElevatorCoordinator.cpp:4:72:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function '[01m[Kvoid ElevatorCoordinator::callback(const ConstPtr&)[m[K'
+     _elevatorSub = n.subscribe("/elevator/status", 1000, callback, this[01;31m[K)[m[K;
+                                                                        [01;31m[K^[m[K
+In file included from [01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/ElevatorCoordinator.cpp:1:0[m[K:
+[01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/include/elevator_pkg/ElevatorCoordinator.h:13:10:[m[K [01;36m[Knote: [m[Kdeclared here
+     void [01;36m[Kcallback[m[K(const amrl_msgs::ElevatorStatus::ConstPtr &msg);
+          [01;36m[K^~~~~~~~[m[K
+make[2]: *** [CMakeFiles/elevator_coordinator.dir/src/ElevatorCoordinator.cpp.o] Error 1
+make[1]: *** [CMakeFiles/elevator_coordinator.dir/all] Error 2
+make: *** [all] Error 2

@@ -1,0 +1,5 @@
+[35m[1mScanning dependencies of target elevator_coordinator[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/elevator_coordinator.dir/src/elevator_coordinator.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/elevator_coordinator.dir/src/ElevatorCoordinator.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /root/projects/elevator_ws/devel/.private/elevator_pkg/lib/elevator_pkg/elevator_coordinator[0m
+[100%] Built target elevator_coordinator

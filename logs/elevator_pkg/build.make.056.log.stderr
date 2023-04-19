@@ -1,0 +1,8 @@
+[01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/elevator_coordinator.cpp:[m[K In function '[01m[Kint main(int, char**)[m[K':
+[01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/elevator_coordinator.cpp:13:5:[m[K [01;31m[Kerror: [m[Kexpected '[01m[K;[m[K' before '[01m[Kros[m[K'
+     [01;31m[Kros[m[K::spin();
+     [01;31m[K^~~[m[K
+make[2]: *** [CMakeFiles/elevator_coordinator.dir/src/elevator_coordinator.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/elevator_coordinator.dir/all] Error 2
+make: *** [all] Error 2

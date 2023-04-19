@@ -1,0 +1,2 @@
+set(amrl_msgs_MESSAGE_FILES "msg/AckermannCurvatureDriveMsg.msg;msg/BBox2DArrayMsg.msg;msg/BBox2DMsg.msg;msg/ColoredArc2D.msg;msg/ColoredLine2D.msg;msg/ColoredPoint2D.msg;msg/ColoredText.msg;msg/ElevatorCommand.msg;msg/ElevatorStatus.msg;msg/ErrorReport.msg;msg/Localization2DMsg.msg;msg/PathVisualization.msg;msg/PlanarObjDetection.msg;msg/Point2D.msg;msg/Pose2Df.msg;msg/RobofleetStatus.msg;msg/RobofleetSubscription.msg;msg/VisualizationMsg.msg")
+set(amrl_msgs_SERVICE_FILES "")

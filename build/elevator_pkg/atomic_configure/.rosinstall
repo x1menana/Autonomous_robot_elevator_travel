@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /root/projects/elevator_ws/devel/.private/elevator_pkg/setup.sh

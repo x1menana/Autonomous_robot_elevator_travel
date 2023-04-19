@@ -1,0 +1,23 @@
+[01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/elevator_coordinator.cpp:[m[K In function '[01m[Kint main(int, char**)[m[K':
+[01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/elevator_coordinator.cpp:14:26:[m[K [01;31m[Kerror: [m[Kexpected '[01m[K,[m[K' or '[01m[K...[m[K' before numeric constant
+ int main(int argc, char *[01;31m[K8[m[K)
+                          [01;31m[K^[m[K
+[01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/elevator_coordinator.cpp:15:3:[m[K [01;31m[Kerror: [m[Kexpected initializer before '[01m[Kint[m[K'
+   [01;31m[Kint[m[K count = 0;
+   [01;31m[K^~~[m[K
+[01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/elevator_coordinator.cpp:21:29:[m[K [01;31m[Kerror: [m[K'[01m[Kcount[m[K' was not declared in this scope
+     ss << "hello world " << [01;31m[Kcount[m[K;
+                             [01;31m[K^~~~~[m[K
+[01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/elevator_coordinator.cpp:21:29:[m[K [01;36m[Knote: [m[Ksuggested alternative:
+In file included from [01m[K/usr/include/c++/7/algorithm:62:0[m[K,
+                 from [01m[K/usr/include/boost/math/tools/config.hpp:18[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:13[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:38[m[K,
+                 from [01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/elevator_coordinator.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/stl_algo.h:4076:5:[m[K [01;36m[Knote: [m[K  '[01m[Kstd::count[m[K'
+     [01;36m[Kcount[m[K(_InputIterator __first, _InputIterator __last, const _Tp& __value)
+     [01;36m[K^~~~~[m[K
+make[2]: *** [CMakeFiles/elevator_coordinator.dir/src/elevator_coordinator.cpp.o] Error 1
+make[1]: *** [CMakeFiles/elevator_coordinator.dir/all] Error 2
+make: *** [all] Error 2

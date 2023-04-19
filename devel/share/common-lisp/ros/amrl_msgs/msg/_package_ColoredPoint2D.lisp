@@ -1,0 +1,1 @@
+/root/projects/elevator_ws/devel/.private/amrl_msgs/share/common-lisp/ros/amrl_msgs/msg/_package_ColoredPoint2D.lisp

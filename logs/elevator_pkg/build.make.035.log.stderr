@@ -1,0 +1,37 @@
+[01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/ElevatorCoordinator.cpp:[m[K In member function '[01m[Kvoid ElevatorCoordinator::callElevator(int, int)[m[K':
+[01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/ElevatorCoordinator.cpp:24:33:[m[K [01;31m[Kerror: [m[Kno matching function for call to '[01m[Kros::Publisher::publish(int, bool)[m[K'
+     _elevatorPub.publish(1, true[01;31m[K)[m[K;
+                                 [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/node_handle.h:32:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:45[m[K,
+                 from [01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/include/elevator_pkg/ElevatorCoordinator.h:7[m[K,
+                 from [01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/ElevatorCoordinator.cpp:1[m[K:
+[01m[K/opt/ros/melodic/include/ros/publisher.h:64:12:[m[K [01;36m[Knote: [m[Kcandidate: template<class M> void ros::Publisher::publish(const boost::shared_ptr<X>&) const
+       void [01;36m[Kpublish[m[K(const boost::shared_ptr<M>& message) const
+            [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/publisher.h:64:12:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/ElevatorCoordinator.cpp:24:33:[m[K [01;36m[Knote: [m[K  mismatched types '[01m[Kconst boost::shared_ptr<X>[m[K' and '[01m[Kint[m[K'
+     _elevatorPub.publish(1, true[01;36m[K)[m[K;
+                                 [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/node_handle.h:32:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:45[m[K,
+                 from [01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/include/elevator_pkg/ElevatorCoordinator.h:7[m[K,
+                 from [01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/ElevatorCoordinator.cpp:1[m[K:
+[01m[K/opt/ros/melodic/include/ros/publisher.h:99:12:[m[K [01;36m[Knote: [m[Kcandidate: template<class M> void ros::Publisher::publish(const M&) const
+       void [01;36m[Kpublish[m[K(const M& message) const
+            [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/publisher.h:99:12:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/ElevatorCoordinator.cpp:24:33:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+     _elevatorPub.publish(1, true[01;36m[K)[m[K;
+                                 [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/node_handle.h:32:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:45[m[K,
+                 from [01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/include/elevator_pkg/ElevatorCoordinator.h:7[m[K,
+                 from [01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/ElevatorCoordinator.cpp:1[m[K:
+[01m[K/opt/ros/melodic/include/ros/publisher.h:178:10:[m[K [01;36m[Knote: [m[Kcandidate: void ros::Publisher::publish(const boost::function<ros::SerializedMessage()>&, ros::SerializedMessage&) const
+     void [01;36m[Kpublish[m[K(const boost::function<SerializedMessage(void)>& serfunc, SerializedMessage& m) const;
+          [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/publisher.h:178:10:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from '[01m[Kint[m[K' to '[01m[Kconst boost::function<ros::SerializedMessage()>&[m[K'
+make[2]: *** [CMakeFiles/elevator_coordinator.dir/src/ElevatorCoordinator.cpp.o] Error 1
+make[1]: *** [CMakeFiles/elevator_coordinator.dir/all] Error 2
+make: *** [all] Error 2

@@ -1,0 +1,5 @@
+[31m[1mCMake Error[0m at /root/projects/elevator_ws/src/elevator_project/amrl_msgs/CMakeLists.txt:49 (add_message_files):
+  Unknown CMake command "add_message_files".
+
+
+make: *** [cmake_check_build_system] Error 1

@@ -1,0 +1,8 @@
+prefix=/root/projects/elevator_ws/devel/.private/elevator_pkg
+
+Name: elevator_pkg
+Description: Description of elevator_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,1 @@
+/root/projects/elevator_ws/devel/.private/amrl_msgs/share/gennodejs/ros/amrl_msgs/msg/_index.js

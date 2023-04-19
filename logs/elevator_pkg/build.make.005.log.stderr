@@ -1,0 +1,13 @@
+[01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/ElevatorCoordinator.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kelevator_pkg/ElevatorCoordinator.h: No such file or directory
+ #include [01;31m[K<elevator_pkg/ElevatorCoordinator.h>[m[K
+          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/elevator_coordinator.dir/src/ElevatorCoordinator.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+[01m[K/root/projects/elevator_ws/src/elevator_project/elevator_pkg/src/elevator_coordinator.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kamrl_msgs/ElevatorStatus.h: No such file or directory
+ #include [01;31m[K"amrl_msgs/ElevatorStatus.h"[m[K
+          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/elevator_coordinator.dir/src/elevator_coordinator.cpp.o] Error 1
+make[1]: *** [CMakeFiles/elevator_coordinator.dir/all] Error 2
+make: *** [all] Error 2
