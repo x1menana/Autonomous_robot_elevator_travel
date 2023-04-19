@@ -7,8 +7,8 @@ int main(int argc, char **argv) {
     ros::NodeHandle n;
     ElevatorCoordinator ec(n);
 
-    ec.callElevator(1, 1);
-    //ec.callElevator(2, 1);
+   // ec.callElevator(1, 1);
+    ec.callElevator(2, 1);
     
     ros::spin();
 }

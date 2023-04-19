@@ -12,20 +12,15 @@ ElevatorCoordinator::~ElevatorCoordinator() {}
 void ElevatorCoordinator::callback(const amrl_msgs::ElevatorStatus::ConstPtr &msg) {
     ROS_INFO_STREAM("amrl_msgs::ElevatorStatus: " << (int)msg->floor << "   " << (int)msg->door);
 
-    _currentFloor = (int)msg->floor;
-    _currentDoor = (int)msg->door;
-
-    /*
-    if((_door == 1) && (msg->door != 1) && (msg->floor == _floor)) {
-        //callElevator(_floor, _door);
-    }
-    */
-   /*
-   while we are on the floor we want it to be in and we want to hold door open, send messages that holds door open
-   */
-   if ((_currentFloor == _floor) && _door) {
+    if(
+        ((int)msg->floor  == _floor) && (
+                _door ?
+                    (int)msg->door != 1 : false
+            )
+    ){
+        ROS_INFO_STREAM("OPENING DOOR");
         callElevator(_floor, true);
-   }
+    }
 
 }
 
