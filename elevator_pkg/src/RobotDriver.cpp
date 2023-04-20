@@ -14,29 +14,21 @@
   void RobotDriver::drive(std::string landmark) {
     move_base_msgs::MoveBaseGoal goal;
 
-/*
-    goal.target_pose.header.frame_id = "base_link";
-    goal.target_pose.child_frame_id = landmark.c_str();
 
+    goal.target_pose.header.frame_id = "base_link";
     goal.target_pose.header.stamp = ros::Time::now();
-*/
 
 /**
  we need to get coordinates from difference and stuff it into goal
-*/
-    geometry_msgs::TransformStamped difference = buffer.lookupTransform("/base_link", landmark, ros::Time(0));
-
-    goal.target_pose.position.x = difference.transform.translation.x;
-    goal.target_pose.position.y = difference.transform.translation.y;
-    goal.target_pose.position.z = difference.transform.translation.z;
-  /*
-      tfBuffer.lookupTransform(base_link, landmark)
+ tfBuffer.lookupTransform(base_link, landmark)
       stuff that into the goal
-      drive to the goal    
-    
+      drive to the goal 
+*/
+    geometry_msgs::TransformStamped difference = buffer.lookupTransform("base_link", landmark, ros::Time(0));
 
-    goal.target_pose.pose.position.x = 1.0;
-    goal.target_pose.pose.orientation.w = 1.0;
+    goal.target_pose.pose.position.x = difference.transform.translation.x;
+    goal.target_pose.pose.position.y = difference.transform.translation.y;
+    goal.target_pose.pose.position.z = difference.transform.translation.z;
 
     _ac.sendGoal(goal);
 
@@ -46,5 +38,4 @@
       ROS_INFO("Hooray, the base moved 1 meter forward");
     else
       ROS_INFO("The base failed to move forward 1 meter for some reason");
-    */
   }
