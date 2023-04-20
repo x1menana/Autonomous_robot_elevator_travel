@@ -12,16 +12,16 @@ public:
     ~ElevatorCoordinator();
 
     void callback(const amrl_msgs::ElevatorStatus::ConstPtr &msg);
-    void callbackTwo(const amrl_msgs::ElevatorCommand::ConstPtr &msg);
     void callElevator(int floor, bool door);
+
 
 protected:
     ros::Subscriber _elevatorSub;
-    ros::Subscriber _elevatorCommandSub;
     ros::Publisher _elevatorPub;
-
-    int _floor;
+    int _floor; 
     bool _door;
+
+    bool controlElevator;
 };
 
 #endif
