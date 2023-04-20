@@ -11,6 +11,9 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   std_msgs
   amrl_msgs
+  move_base_msgs
+  geometry_msgs
+  tf2_ros
 )
 
 ## System dependencies are found with CMake's conventions
@@ -136,7 +139,17 @@ include_directories(
 add_executable(elevator_coordinator
   src/ElevatorCoordinator.cpp
   src/elevator_coordinator.cpp
-  )
+)
+
+add_executable(robot_driver
+  src/RobotDriver.cpp
+  src/robot_driver.cpp
+)
+
+add_executable(landmark
+  src/Landmarks.cpp
+  src/landmark.cpp
+)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -150,6 +163,14 @@ add_executable(elevator_coordinator
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(elevator_coordinator
+   ${catkin_LIBRARIES}
+)
+
+target_link_libraries(robot_driver
+   ${catkin_LIBRARIES}
+)
+
+target_link_libraries(landmark
    ${catkin_LIBRARIES}
 )
 
