@@ -14,7 +14,6 @@ void ElevatorCoordinator::callback(const amrl_msgs::ElevatorStatus::ConstPtr &ms
         ROS_INFO_STREAM("OPENING DOOR");
         callElevator(_floor, true);
     }
-
     /*
     if(
         ((int)msg->floor  == _floor) && (
@@ -26,7 +25,6 @@ void ElevatorCoordinator::callback(const amrl_msgs::ElevatorStatus::ConstPtr &ms
         callElevator(_floor, true);
     }
     */
-
 }
 
 void ElevatorCoordinator::callElevator(int floor, bool door) {
@@ -38,4 +36,8 @@ void ElevatorCoordinator::callElevator(int floor, bool door) {
     command.floor_cmd = floor;
     command.hold_door = door;
     _elevatorPub.publish(command);
+}
+
+void ElevatorCoordinator::setControlElevator(bool control) {
+    controlElevator = control;
 }

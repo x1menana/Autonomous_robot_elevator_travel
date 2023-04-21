@@ -4,15 +4,15 @@
 
 int main(int argc, char** argv){
     ros::init(argc, argv, "robot_driver");
-
     ros::NodeHandle n;
     ElevatorCoordinator ec(n);
-    
     RobotDriver robotDriver;
-    bool isSuccessful = robotDriver.drive("/outside_elevator_2nd");
-    if (isSuccesful) {
+    bool isSuccessful = robotDriver.drive("outside_elevator_2nd");
+    if (isSuccessful) {
+      ROS_INFO_STREAM("CALLING ELEVATOR");
       ec.callElevator(2, 1);
     }
+    
     /*
         Could put Landmarks here, or run it separately
         Definitely put ElevatorCoordinator in here
