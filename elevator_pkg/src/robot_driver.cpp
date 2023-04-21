@@ -6,8 +6,9 @@ int main(int argc, char** argv){
     ros::init(argc, argv, "robot_driver");
 
     ros::NodeHandle n;
-    RobotDriver robotDriver;
     ElevatorCoordinator ec(n);
+    
+    RobotDriver robotDriver;
     bool isSuccessful = robotDriver.drive("/outside_elevator_2nd");
     if (isSuccesful) {
       ec.callElevator(2, 1);

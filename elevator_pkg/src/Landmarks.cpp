@@ -17,7 +17,7 @@
 
   //tell the action client that we want to spin a thread by default
   Landmarks::Landmarks () {
-    // create landmark outside elevator
+    // create landmark outside elevator on 2nd floor
     transformOuside.header.frame_id = "/2ndFloorWhole_map";
     transformOuside.child_frame_id = "/outside_elevator_2nd";
 
@@ -42,6 +42,8 @@
     transformInside.transform.rotation.y = 0.000;
     transformInside.transform.rotation.z = -0.021;
     transformInside.transform.rotation.w = 1.000;
+
+    // now create a landmark outside elevator on 1st floor
   }
 
   Landmarks::~Landmarks() {}

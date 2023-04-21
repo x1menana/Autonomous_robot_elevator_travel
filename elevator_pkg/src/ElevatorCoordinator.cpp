@@ -10,7 +10,6 @@ ElevatorCoordinator::~ElevatorCoordinator() {}
 
 void ElevatorCoordinator::callback(const amrl_msgs::ElevatorStatus::ConstPtr &msg) {
     ROS_INFO_STREAM("amrl_msgs::ElevatorStatus: " << (int)msg->floor << "   " << (int)msg->door);
-
     if (controlElevator && ((int)msg->floor  == _floor)) {
         ROS_INFO_STREAM("OPENING DOOR");
         callElevator(_floor, true);

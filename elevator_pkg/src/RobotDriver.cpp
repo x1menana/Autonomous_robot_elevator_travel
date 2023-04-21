@@ -20,20 +20,18 @@ RobotDriver::~RobotDriver() {}
  * landmark: "/outside_elevator_1st" for outside the elevator on the 2nd floor
  * landmark: "/inside_elevator_2nd" for inside the elevator on the 2nd floor
  */
-bool RobotDriver::drive(std::string landmark)
-{
+bool RobotDriver::drive(std::string landmark){
   move_base_msgs::MoveBaseGoal goal;
-
   goal.target_pose.header.frame_id = "base_link";
   goal.target_pose.header.stamp = ros::Time::now();
-
   /**
    we need to get coordinates from difference and stuff it into goal
    tfBuffer.lookupTransform(base_link, landmark)
-        stuff that into the goal
-        drive to the goal
+   stuff that into the goal
+   drive to the goal
   */
   geometry_msgs::TransformStamped difference;
+
   // difference.waitForTransform("base_footprint", landmark, ros::Time::now(), ros::Duration(4.0))
 
   difference = buffer.lookupTransform("base_footprint", landmark, ros::Time(0), ros::Duration(4.0));
@@ -51,10 +49,11 @@ bool RobotDriver::drive(std::string landmark)
 
   _ac.waitForResult();
 
-  if (_ac.getState() == actionlib::SimpleClientGoalState::SUCCEEDED)
+  if (_ac.getState() == actionlib::SimpleClientGoalState::SUCCEEDED) {
     ROS_INFO("Hooray, the base moved to the designated landmark");
     return true;
-  else
+  } else {
     ROS_INFO("The base failed to move to the designated landmark for some reason");
     return false;
+  }
 }
