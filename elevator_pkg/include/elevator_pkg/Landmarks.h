@@ -9,12 +9,10 @@ class Landmarks {
 public:
     Landmarks();
     ~Landmarks();
-
     void publishLandmarks();
 
 protected:
     tf2_ros::TransformBroadcaster _br;
-
     geometry_msgs::TransformStamped transformOuside;
     geometry_msgs::TransformStamped transformInside;
 };

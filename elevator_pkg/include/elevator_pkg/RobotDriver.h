@@ -16,12 +16,12 @@ class RobotDriver {
 public:
     RobotDriver();
     ~RobotDriver();
-
-    void drive(std::string landmark);
+    bool drive(std::string landmark);
+    
 protected:
     MoveBaseClient _ac;
-
     tf2_ros::Buffer buffer;
+    tf2_ros::TransformListener tfListener;
 };
 
 #endif

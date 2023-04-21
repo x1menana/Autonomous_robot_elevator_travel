@@ -10,17 +10,15 @@ class ElevatorCoordinator{
 public:
     ElevatorCoordinator(ros::NodeHandle &n);
     ~ElevatorCoordinator();
-
     void callback(const amrl_msgs::ElevatorStatus::ConstPtr &msg);
     void callElevator(int floor, bool door);
-
 
 protected:
     ros::Subscriber _elevatorSub;
     ros::Publisher _elevatorPub;
     int _floor; 
     bool _door;
-
+    // field that determines if we want to control elevator (currently)
     bool controlElevator;
 };
 
