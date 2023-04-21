@@ -12,6 +12,7 @@ public:
     ~ElevatorCoordinator();
     void callback(const amrl_msgs::ElevatorStatus::ConstPtr &msg);
     void callElevator(int floor, bool door);
+    void setControlElevator(bool control);
 
 protected:
     ros::Subscriber _elevatorSub;
