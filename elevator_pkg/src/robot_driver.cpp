@@ -1,5 +1,6 @@
 #include <elevator_pkg/RobotDriver.h>
 #include <elevator_pkg/ElevatorCoordinator.h>
+#include <string>
 #include "ros/ros.h"
 
 int main(int argc, char** argv){
@@ -7,20 +8,35 @@ int main(int argc, char** argv){
     ros::NodeHandle n;
     ElevatorCoordinator ec(n);
     RobotDriver robotDriver;
-    /**
-     * BEWARE: NO SLASHES IN .DRIVE() PARAMETER
-     * DANGERRR
-     */
-    bool isSuccessful = robotDriver.drive("outside_elevator_2nd");
+    // true if robots goal is to travel to the 1st floor FROM the 2nd floor, false otherwise
+    bool travelToFirst = true;
+    std::string firstDestination  = (travelToFirst)? "outside_elevator_2nd": "outside_elevator_1st";
+    std::string secondDestination = (travelToFirst)? "inside_elevator_2nd": "inside_elevator_1st";
+    int floorToCall = (travelToFirst)? 2: 1;
+    int floorToSend = (travelToFirst)? 1: 2;
+    // NO SLASHES IN DRIVER PARAMETER
+    bool isSuccessful = robotDriver.drive(firstDestination);
     if (isSuccessful) {
       ROS_INFO_STREAM("CALLING ELEVATOR");
-      ec.callElevator(2, 1);
+      ec.callElevator(floorToCall, true);
       while (!ec.isElevatorOnFloor()) {
         ROS_INFO_STREAM("WAITING FOR ELEVATOR");
       }
       // here drive robot inside elevator
       ROS_INFO_STREAM("YAY ELEVATOR IS HERE <3");
-      isSuccessful = robotDriver.drive("inside_elevator_2nd");
+      isSuccessful = robotDriver.drive(secondDestination);
+      // here call elevator to 1st floor
+      if (isSuccessful) {
+        ec.callElevator(floorToSend, true);
+        while (!ec.isElevatorOnFloor()) {
+          ROS_INFO_STREAM("WAITING FOR ELEVATOR");
+        }
+        ROS_INFO_STREAM("WE ARE AT TARGET FLOOR");
+        // here drive robot outside elevator
+
+
+
+      }
     }
     
     /*
@@ -34,6 +50,6 @@ int main(int argc, char** argv){
         
 
     */
-
+  //ros::spin();
   return 0;
 }

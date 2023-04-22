@@ -12,22 +12,10 @@ void ElevatorCoordinator::callback(const amrl_msgs::ElevatorStatus::ConstPtr &ms
     //ROS_INFO_STREAM("amrl_msgs::ElevatorStatus: " << (int)msg->floor << "   " << (int)msg->door);
     actualFloor = (int)msg->floor;
     isDoorOpen = ((int)msg->door == 1);
-
     if (controlElevator && ((int)msg->floor  == _floor)) {
         ROS_INFO_STREAM("OPENING DOOR");
         callElevator(_floor, true);
     }
-    /*
-    if(
-        ((int)msg->floor  == _floor) && (
-                _door ?
-                    (int)msg->door != 1 : false
-            )
-    ){
-        ROS_INFO_STREAM("OPENING DOOR");
-        callElevator(_floor, true);
-    }
-    */
 }
 
 /**
@@ -47,12 +35,15 @@ void ElevatorCoordinator::callElevator(int floor, bool door) {
     _elevatorPub.publish(command);
 }
 
+/**
+ * sets whether we want to currently control the elevator
+ */
 void ElevatorCoordinator::setControlElevator(bool control) {
     controlElevator = control;
 }
 
 /**
- * @brief returns true if the elevator is currently on the floor you called it to AND 
+ * returns true if the elevator is currently on the floor you called it to AND 
  * door is open
  */
 bool ElevatorCoordinator::isElevatorOnFloor() {
