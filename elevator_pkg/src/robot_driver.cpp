@@ -7,10 +7,20 @@ int main(int argc, char** argv){
     ros::NodeHandle n;
     ElevatorCoordinator ec(n);
     RobotDriver robotDriver;
+    /**
+     * BEWARE: NO SLASHES IN .DRIVE() PARAMETER
+     * DANGERRR
+     */
     bool isSuccessful = robotDriver.drive("outside_elevator_2nd");
     if (isSuccessful) {
       ROS_INFO_STREAM("CALLING ELEVATOR");
       ec.callElevator(2, 1);
+      while (!ec.isElevatorOnFloor()) {
+        ROS_INFO_STREAM("WAITING FOR ELEVATOR");
+      }
+      // here drive robot inside elevator
+      ROS_INFO_STREAM("YAY ELEVATOR IS HERE <3");
+      isSuccessful = robotDriver.drive("inside_elevator_2nd");
     }
     
     /*

@@ -34,14 +34,14 @@
     transformInside.header.frame_id = "/2ndFloorWhole_map";
     transformInside.child_frame_id = "/inside_elevator_2nd";
 
-    transformInside.transform.translation.x = 0.50;
-    transformInside.transform.translation.y = -8.00;
+    transformInside.transform.translation.x = -0.789395;
+    transformInside.transform.translation.y = -8.31575;
     transformInside.transform.translation.z = 0.64989;
 
     transformInside.transform.rotation.x = 0.000;
     transformInside.transform.rotation.y = 0.000;
-    transformInside.transform.rotation.z = -0.021;
-    transformInside.transform.rotation.w = 1.000;
+    transformInside.transform.rotation.z = 0.999861;
+    transformInside.transform.rotation.w = -0.0166968;
 
     // now create a landmark outside elevator on 1st floor
   }
