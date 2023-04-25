@@ -34,8 +34,8 @@
     transformInside.header.frame_id = "/2ndFloorWhole_map";
     transformInside.child_frame_id = "/inside_elevator_2nd";
 
-    transformInside.transform.translation.x = -0.789395;
-    transformInside.transform.translation.y = -8.31575;
+    transformInside.transform.translation.x = -0.089395;
+    transformInside.transform.translation.y = -8.01575;
     transformInside.transform.translation.z = 0.64989;
 
     transformInside.transform.rotation.x = 0.000;

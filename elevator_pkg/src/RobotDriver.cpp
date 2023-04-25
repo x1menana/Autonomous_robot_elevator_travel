@@ -57,3 +57,30 @@ bool RobotDriver::drive(std::string landmark){
     return false;
   }
 }
+
+bool RobotDriver::driveFoward(){
+  move_base_msgs::MoveBaseGoal goal;
+  goal.target_pose.header.frame_id = "base_link";
+  goal.target_pose.header.stamp = ros::Time::now();
+
+  goal.target_pose.pose.position.x = 3.0;
+
+  /*
+  goal.target_pose.pose.orientation.x = 1;
+  goal.target_pose.pose.orientation.y = 1;
+  goal.target_pose.pose.orientation.z = 1; 
+  */
+  goal.target_pose.pose.orientation.w = 1;
+
+  _ac.sendGoal(goal);
+
+  _ac.waitForResult();
+
+  if (_ac.getState() == actionlib::SimpleClientGoalState::SUCCEEDED) {
+    ROS_INFO("Hooray, the base moved to the designated landmark");
+    return true;
+  } else {
+    ROS_INFO("The base failed to move to the designated landmark for some reason");
+    return false;
+  }
+}

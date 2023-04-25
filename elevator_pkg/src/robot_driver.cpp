@@ -25,6 +25,7 @@ int main(int argc, char** argv){
       // here drive robot inside elevator
       ROS_INFO_STREAM("YAY ELEVATOR IS HERE <3");
       isSuccessful = robotDriver.drive(secondDestination);
+      //isSuccessful= robotDriver.driveFoward();
       // here call elevator to 1st floor
       if (isSuccessful) {
         ec.callElevator(floorToSend, true);

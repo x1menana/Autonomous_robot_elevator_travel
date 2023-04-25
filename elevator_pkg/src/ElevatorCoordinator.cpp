@@ -32,6 +32,7 @@ void ElevatorCoordinator::callElevator(int floor, bool door) {
     amrl_msgs::ElevatorCommand command;
     command.floor_cmd = floor;
     command.hold_door = door;
+    ROS_INFO_STREAM("CALLING ELEVATOR");
     _elevatorPub.publish(command);
 }
 
