@@ -17,6 +17,7 @@ public:
     RobotDriver();
     ~RobotDriver();
     bool drive(std::string landmark);
+    bool driveFoward();
     
 protected:
     MoveBaseClient _ac;
